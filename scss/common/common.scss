@@ -1,6 +1,7 @@
 body {
     font-family: $default;
     font-size: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -12,4 +13,8 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.text_spec {
+    font-family: Arial, Helvetica, sans-serif;
 }

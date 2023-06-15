@@ -5,24 +5,57 @@ $font-weights: bolder, bold, normal, lighter;
 
 // Перебираем этот list и сгенерируем нужные нам классы
 @each $value in $font-weights {
-    .font-#{$value} {
-        font-weight: $value;
-    }
+  .font-#{$value} {
+    font-weight: $value;
+  }
 }
 
 // Создадим map
 $btn-map: (
-    primary blueviolet white,
-    success palegreen black,
-    danger indianred white,
-    default white black,
+  primary blueviolet white,
+  success palegreen black,
+  danger indianred white,
+  default white black
 );
 
 // Перебираем этот map и сгенерируем нужные нам классы
 @each $type, $bg-color, $font-color in $btn-map {
+  .btn.btn-#{$type} {
+    background-color: $bg-color;
+    color: $font-color;
+  }
+}
 
-    .btn.btn-#{$type} {
-        background-color: $bg-color;
-        color: $font-color;
-    }
+$fontColors: (
+  black #2c2d36 vvsm 14px,
+  black #2c2d36 vsm 16px,
+  black #2c2d36 sm 18px,
+  black #2c2d36 md 24px,
+  black #2c2d36 xl 30px,
+  black #2c2d36 xxl 60px,
+  purple #6339f5 vvsm 14px,
+  purple #6339f5 vsm 16px,
+  purple #6339f5 sm 18px,
+  purple #6339f5 md 24px,
+  purple #6339f5 xl 30px,
+  purple #6339f5 xxl 60px,
+  white #f2f2f2 vvsm 14px,
+  white #f2f2f2 vsm 16px,
+  white #f2f2f2 sm 18px,
+  white #f2f2f2 md 24px,
+  white #f2f2f2 xl 30px,
+  white #f2f2f2 xxl 60px,
+  grey #6b7280 vvsm 14px,
+  grey #6b7280 vsm 16px,
+  grey #6b7280 sm 18px,
+  grey #6b7280 md 24px,
+  grey #6b7280 xl 30px,
+  grey #6b7280 xxl 60px
+);
+
+@each $name, $color, $sizeName, $size in $fontColors {
+  .text_#{$name}--#{$sizeName} {
+    color: $color;
+    font-size: $size;
+  }
 }
