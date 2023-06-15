@@ -1,0 +1,4 @@
+@charset "utf-8";
+@import './common/'; // Импортируем все стили из папки common
+@import './components/header'; // Импортируем header для этой странички article.html
+@import './components/another-component/'; // Другой приватный компонент для примера, для конкретно этой странички

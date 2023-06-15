@@ -1,0 +1,15 @@
+.banner {
+    &__text,
+    &__form-wrapper {
+        width: 50%;
+    }
+
+    &__label {
+        display: block;
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}

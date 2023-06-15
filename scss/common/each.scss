@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// Создадим list
+$font-weights: bolder, bold, normal, lighter;
+
+// Перебираем этот list и сгенерируем нужные нам классы
+@each $value in $font-weights {
+    .font-#{$value} {
+        font-weight: $value;
+    }
+}
+
+// Создадим map
+$btn-map: (
+    primary blueviolet white,
+    success palegreen black,
+    danger indianred white,
+    default white black,
+);
+
+// Перебираем этот map и сгенерируем нужные нам классы
+@each $type, $bg-color, $font-color in $btn-map {
+
+    .btn.btn-#{$type} {
+        background-color: $bg-color;
+        color: $font-color;
+    }
+}
