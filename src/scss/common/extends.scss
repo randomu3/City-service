@@ -1,0 +1,18 @@
+// %extend-example {
+//     display: inline-block;
+//     color: pink;
+//     border: 1px solid black;
+//     width: $content-width;
+// }
+
+// %text-md {
+//     font-size: 16px;
+//     font-weight: 500;
+//     color: $textColor;
+//   }
+
+%extend-button {
+    border-radius: 6px;
+    padding: 16px 25px;
+    border: 1px solid $purple;
+}

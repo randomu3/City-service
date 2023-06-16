@@ -1,0 +1,27 @@
+// example n1
+// @mixin my-mixin($color, $height) {
+//   color: $color;
+//   height: $height;
+//   @extend %extend-example;
+// }
+
+@mixin background-image($url, $position: null, $repeat: no-repeat) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin absolute-position($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
