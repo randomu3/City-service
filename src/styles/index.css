@@ -136,6 +136,11 @@ table {
   font-size: 30px;
 }
 
+.text_black--xl {
+  color: #2c2d36;
+  font-size: 48px;
+}
+
 .text_black--xxl {
   color: #2c2d36;
   font-size: 60px;
@@ -164,6 +169,11 @@ table {
 .text_purple--xl {
   color: #6339f5;
   font-size: 30px;
+}
+
+.text_purple--xlmd {
+  color: #6339f5;
+  font-size: 48px;
 }
 
 .text_purple--xxl {
