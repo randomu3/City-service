@@ -108,16 +108,16 @@
   }
 
   &__vector--primary {
-    @include background-image(url(../../../images/Vector-1-min.png));
+    @include background-image("../images/Vector-1-min.png");
     width: 404px;
     height: 303px;
     @include absolute-position($bottom: 10px, $right: -430px);
   }
 
   &__vector--secondary {
-    @include background-image(url(../../../images/Vector-min.png));
+    @include background-image("../images/Vector-min.png");
     width: 331px;
-    height: 334p  x;
+    height: 334px;
     @include absolute-position($bottom: 270px, $left: -240px);
   }
 }
