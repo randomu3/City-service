@@ -16,3 +16,12 @@
     padding: 16px 25px;
     border: 1px solid $purple;
 }
+
+%extend-transparent-button-hover {
+  &:hover {
+    background: $lightPurple;
+    transition: all 0.3s ease-in;
+    color: $white;
+    border-radius: 1px solid $lightPurple 6px;
+  }
+}

@@ -1,0 +1,100 @@
+.tender-invitation {
+  background-color: $lilac;
+  max-width: 100%;
+  padding: 108px 0 106px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/logos-tenders/24-coat-of-arms-min.png");
+  background-repeat: no-repeat;
+  background-position: left;
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+
+    &-note {
+      font-weight: 400;
+    }
+  }
+
+  &__prelogo {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    padding: 27px;
+    border-radius: 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 500;
+  }
+
+  &__image {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__prelogo img {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__item {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__container {
+    max-width: 1266px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__part {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  &__heading {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 1095px;
+  }
+
+  &__title,
+  &__title-note {
+    font-weight: 600;
+  }
+
+  &__button {
+    background: transparent;
+    width: fit-content;
+    @extend %extend-button;
+    @extend %extend-transparent-button-hover;
+  }
+}
