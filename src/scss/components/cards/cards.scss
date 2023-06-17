@@ -33,6 +33,8 @@
     max-height: $max-height;
     height: 100%;
     border-radius: $border-radius;
+    position: relative;
+    overflow: hidden; // добавлено, чтобы скрыть переполнение
 
     &--text {
       @include flex-start;
@@ -41,6 +43,8 @@
       bottom: 0;
       z-index: 2;
       gap: 14px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease-in-out;
     }
 
     .card__item--arrow {
@@ -96,6 +100,17 @@
         z-index: 1;
         top: 0;
         left: 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+    &:hover {
+      .card__item--text {
+        transform: translateY(0);
+      }
+
+      .card__item--overlay::after {
+        transform: translateY(0);
       }
     }
   }
