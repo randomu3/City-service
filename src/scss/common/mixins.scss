@@ -25,3 +25,15 @@
   bottom: $bottom;
   left: $left;
 }
+
+@mixin flex-centered {
+  @include flexbox;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-start {
+  @include flexbox;
+  flex-direction: column;
+  align-items: flex-start;
+}

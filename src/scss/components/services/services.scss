@@ -5,20 +5,22 @@
   justify-content: center;
   @include flexbox;
 
+  &__content, &__header, &__actions, &__description {
+    @include flexbox;
+  }
+
   &__content {
     padding: 129px 70px 0;
     width: $content-width;
-    @include flexbox;
     flex-direction: column;
     gap: 85px;
-    background-image: url(../images/img-min.png);
+    background-image: url(../images/background/img-min.png);
     background-repeat: no-repeat;
     background-position: 630px 70px;
     position: relative;
   }
 
   &__header {
-    @include flexbox;
     flex-direction: column;
     gap: 34px;
   }
@@ -37,7 +39,6 @@
   }
 
   &__actions {
-    @include flexbox;
     gap: 20px;
   }
 
@@ -45,9 +46,12 @@
     @extend %extend-button;
     font-weight: 500;
 
+    &--primary, &--secondary {
+      cursor: pointer;
+    }
+
     &--primary {
       background-color: $purple;
-      cursor: pointer;
 
       &:hover {
         background: $lightPurple;
@@ -58,7 +62,6 @@
 
     &--secondary {
       background-color: transparent;
-      cursor: pointer;
 
       &:hover {
         background: $lightPurple;
@@ -70,13 +73,11 @@
   }
 
   &__description {
-    @include flexbox;
     gap: 70px;
     justify-content: space-between;
   }
 
   &__item {
-    @include flexbox;
     flex-direction: row;
     gap: 13px;
     max-width: 234px;
@@ -108,16 +109,21 @@
   }
 
   &__vector--primary {
-    @include background-image(url(../../../images/Vector-1-min.png));
+    @include background-image("../images/vector/Vector-1-min.png");
     width: 404px;
     height: 303px;
     @include absolute-position($bottom: 10px, $right: -430px);
   }
 
   &__vector--secondary {
-    @include background-image(url(../../../images/Vector-min.png));
+    @include background-image("../images/vector/Vector-min.png");
     width: 331px;
-    height: 334p  x;
+    height: 334px;
     @include absolute-position($bottom: 270px, $left: -240px);
   }
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
 }
