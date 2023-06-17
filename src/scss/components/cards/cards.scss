@@ -36,6 +36,22 @@
     position: relative;
     overflow: hidden; // добавлено, чтобы скрыть переполнение
 
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border: 1px solid $grey; // Change this to your desired border
+      border-radius: $border-radius;
+      z-index: 1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
     &--text {
       @include flex-start;
       padding: 22px 26px;
@@ -62,11 +78,17 @@
       justify-content: center;
       flex-wrap: wrap;
       align-content: center;
+      gap: 19px;
+      background: #ffffff;
 
       &-text {
         @include flexbox;
         align-items: center;
         gap: 10px;
+      }
+
+      .card__item--link-title {
+        text-decoration: none !important;
       }
 
       img {
