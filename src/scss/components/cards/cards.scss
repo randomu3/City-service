@@ -26,7 +26,7 @@
     max-width: $content-width;
     margin: 0 auto;
     width: 100%;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &__item {
@@ -47,7 +47,7 @@
       left: 0;
       border: 1px solid $grey;
       border-radius: $border-radius;
-      z-index: 1;
+      z-index: 2;
     }
 
     a {
