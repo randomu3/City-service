@@ -9,16 +9,6 @@
   background-repeat: no-repeat;
   background-position: left;
 
-  &__stats {
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-
-    &-note {
-      font-weight: 400;
-    }
-  }
-
   &__prelogo {
     width: 70px;
     height: 70px;
@@ -38,23 +28,33 @@
       border-radius: 50%;
       z-index: 1;
     }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__stats,
+  &__title {
+    font-weight: 600;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+
+    &-note {
+      font-weight: 400;
+    }
   }
 
   &__sub-title {
     font-weight: 500;
   }
 
-  &__image {
-    position: relative;
-    z-index: 2;
-  }
-
-  &__prelogo img {
-    position: relative;
-    z-index: 2;
-  }
-
-  &__item {
+  &__item,
+  &__heading {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -75,20 +75,9 @@
     flex-direction: column;
   }
 
-  &__heading {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
-
   &__title {
     width: 100%;
     max-width: 1095px;
-  }
-
-  &__title,
-  &__title-note {
-    font-weight: 600;
   }
 
   &__button {
