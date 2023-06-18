@@ -1,33 +1,41 @@
 .service {
   background-color: $lightBlue;
-  max-width: 100%;
-  height: 780px;
+  width: 100%;
   justify-content: center;
   @include flexbox;
 
-  &__content, &__header, &__actions, &__description {
+  &__background {
+    position: absolute;
+    right: -110px;
+    top: -80px;
+    z-index: 1;
+  }
+
+  &__content,
+  &__header,
+  &__actions,
+  &__description {
     @include flexbox;
   }
 
   &__content {
-    padding: 129px 70px 0;
+    padding: 129px 0 70px;
     width: $content-width;
     flex-direction: column;
     gap: 85px;
-    background-image: url(../images/background/img-min.png);
-    background-repeat: no-repeat;
-    background-position: 630px 70px;
     position: relative;
   }
 
   &__header {
     flex-direction: column;
     gap: 34px;
+    position: relative;
   }
 
   &__title {
     max-width: 655px;
     font-weight: 600;
+    z-index: 2;
 
     &--highlight {
       color: $purple; // Используйте соответствующий цвет
@@ -46,7 +54,8 @@
     @extend %extend-button;
     font-weight: 500;
 
-    &--primary, &--secondary {
+    &--primary,
+    &--secondary {
       cursor: pointer;
     }
 
@@ -55,7 +64,7 @@
 
       &:hover {
         background: $lightPurple;
-        transition: all 0.3s linear;
+        transition: 0.6s ease;
         border-radius: 1px solid $lightPurple 6px;
       }
     }
@@ -65,7 +74,7 @@
 
       &:hover {
         background: $lightPurple;
-        transition: all 0.3s ease-in;
+        transition: 0.6s ease;
         color: $white;
         border-radius: 1px solid $lightPurple 6px;
       }
@@ -110,16 +119,16 @@
 
   &__vector--primary {
     @include background-image("../images/vector/Vector-1-min.png");
-    width: 404px;
+    width: 202px;
     height: 303px;
-    @include absolute-position($bottom: 10px, $right: -430px);
+    @include absolute-position($bottom: 55px, $right: -306px);
   }
 
   &__vector--secondary {
     @include background-image("../images/vector/Vector-min.png");
-    width: 331px;
+    width: 229px;
     height: 334px;
-    @include absolute-position($bottom: 270px, $left: -240px);
+    @include absolute-position($bottom: 305px, $left: -308px);
   }
 }
 
