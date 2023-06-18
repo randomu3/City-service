@@ -415,6 +415,7 @@
 
     <section class="request">
       <div class="request__container">
+        <img src="../images/background/Frame-min.png" alt="" class="request__image">
         <div class="request__header">
           <h2 class="request__title text_black--xls">
             Оставьте заявку и <span class="request__highlight text_purple--xls">получите КП</span><br>
@@ -426,21 +427,26 @@
             После получения заявки, менеджер компании обязательно свяжется с Вами для уточнения заказа.
           </h3>
           <div class="request__input-group">
-            <input placeholder="Имя или компания *" type="text" class="request__input">
-            <input placeholder="Телефон *" type="text" class="request__input">
+            <div class="request__input-group-validation">
+              <input placeholder="Имя или компания *" name="name" type="text" class="request__input text_black--vsm">
+              <span class="request__input-error"><img class="request__input-error-pic" src="../images/validation/Error-min.png" alt="">Проверьте правильность заполнения поля</span>
+            </div>
+            <div class="request__input-group-validation">
+              <input placeholder="Телефон *" name="phone" type="text" class="request__input text_black--vsm">
+              <span class="request__input-error"><img class="request__input-error-pic" src="../images/validation/Error-min.png" alt="">Проверьте правильность заполнения поля</span>
+            </div>
           </div>
           <div class="request__textarea-group">
-            <textarea placeholder="Что нужно сделать?" type="text" class="request__textarea"></textarea>
+            <textarea maxlength="200" rows="2" placeholder="Что нужно сделать?" type="text" class="request__textarea text_black--vsm"></textarea>
           </div>
           <div class="request__submission">
-            <button class="request__submit-button">Отправить заявку</button>
-            <p class="request__consent">
-              Нажимая на кнопку вы даете согласие на <a href="#" class="request__consent-link">обработку ваших персональных данных</a>
+            <button class="request__submit-button text_white--sm">Отправить заявку</button>
+            <p class="request__consent text_grey--vvsm">
+              Нажимая на кнопку вы даете согласие на <a href="#" class="request__consent-link text_grey--vvsm">обработку ваших персональных данных</a>
             </p>
           </div>
         </form>
       </div>
-      <!-- <img src="../images/background/Frame-min.png" alt="" class="request__image"> -->
     </section>
 
     <footer class="footer">
