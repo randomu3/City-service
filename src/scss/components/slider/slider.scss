@@ -14,7 +14,9 @@
   }
 
   &__button {
-    // Общие стили кнопок
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
 
     &--prev {
       // Стили для кнопки предыдущего слайда
