@@ -1,0 +1,67 @@
+.request {
+  display: flex;
+  background-color: $lightBlue;
+  width: 100%;
+
+  &__container {
+    max-width: $content-width;
+    width: 100%;
+  }
+
+  &__header {
+    // styles for header
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__highlight {
+    // styles for highlighted text
+  }
+
+  &__subtitle {
+    // styles for subtitle
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 630px;
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+  }
+
+  &__input-group {
+    // styles for input group
+  }
+
+  &__input,
+  &__textarea {
+    // styles for input and textarea
+  }
+
+  &__textarea-group {
+
+  }
+
+  &__submission {
+    // styles for submission section
+  }
+
+  &__submit-button {
+    // styles for submit button
+  }
+
+  &__consent {
+    // styles for consent paragraph
+  }
+
+  &__consent-link {
+    // styles for consent link
+  }
+
+  &__image {
+    // styles for image
+  }
+}

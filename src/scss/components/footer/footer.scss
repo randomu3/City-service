@@ -1,3 +1,93 @@
 .footer {
-  
+  background-color: $darkwhite;
+  width: 100%;
+
+  &__container {
+    margin: auto;
+    max-width: 1290px;
+    width: 100%;
+  }
+  &__main {
+    @include flex(row, space-between, flex-end, 33px);
+    padding: 47px 0;
+    border-bottom: 1px solid #cbd0e3;
+  }
+  &__info {
+    @include flex(column);
+    gap: 33px;
+    max-width: 400px;
+    width: 100%;
+  }
+  &__address {
+    @include flex();
+    gap: 13px;
+  }
+  &__address-info {
+    @include flex(column);
+    gap: 5px;
+    line-height: 150%;
+  }
+  &__location-icon {
+    width: 11px;
+    height: 16px;
+  }
+  &__label-address {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+  &__nav-wrapper {
+    @include flex();
+    gap: 86px;
+  }
+  &__list {
+    @include flex(column);
+    gap: 24px;
+  }
+  &__link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+  &__contacts {
+    @include flex();
+    gap: 9px;
+  }
+  &__contact-wrapper {
+    @include flex(column);
+    gap: 13px;
+  }
+  &__contact-info {
+    @include flex(column);
+    gap: 4px;
+  }
+  &__contact-info-city {
+    font-weight: 500;
+  }
+  &__contacts-logo {
+    width: 16px;
+    height: 16px;
+    margin: 5px 0 0 0;
+  }
+  &__phone {
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__email {
+    text-decoration: none;
+  }
+  &__bottom {
+    @include flex();
+    gap: 203px;
+    padding: 27px 0 52px;
+  }
+  &__privacy-policy {
+    text-decoration: none;
+  }
 }
