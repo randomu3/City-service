@@ -20,4 +20,4 @@ HTML, CSS, SCSS
 
 **GitHub Pages**
 
-* [Ссылка на GitHub Pages]()
+* [Ссылка на GitHub Pages](https://randomu3.github.io/City-service/)
