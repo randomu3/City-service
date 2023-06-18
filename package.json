@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "bitrix-webpack": "^1.1.1",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "inputmask": "^5.0.8"
   }
 }

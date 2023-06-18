@@ -54,7 +54,7 @@ $fontColors: (
   "grey" #6b7280 sm 18px,
   "grey" #6b7280 md 24px,
   "grey" #6b7280 xl 30px,
-  "grey" #6b7280 xxl 60px
+  "grey" #6b7280 xxl 60px,
 );
 
 @each $name, $color, $sizeName, $size in $fontColors {

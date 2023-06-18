@@ -6,6 +6,12 @@
   &__container {
     max-width: $content-width;
     width: 100%;
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    margin: 0 auto;
   }
 
   &__header {
@@ -33,35 +39,107 @@
   }
 
   &__input-group {
-    // styles for input group
+    display: flex;
+    gap: 30px;
+  }
+  &__input-group-validation {
+    width: 100%;
+    position: relative;
   }
 
   &__input,
   &__textarea {
-    // styles for input and textarea
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 18px 21px;
+
+    &:focus-visible {
+      border: none;
+      outline: 1px solid #9999ff;
+    }
+
+    &::placeholder {
+      font-family: "Golos", Arial, sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: hidden;
   }
 
   &__textarea-group {
-
   }
 
   &__submission {
-    // styles for submission section
+    display: flex;
+    gap: 30px;
+    align-items: center;
   }
 
   &__submit-button {
-    // styles for submit button
+    @extend %extend-button;
+    @extend %extend-transparent-button-hover;
+    background-color: $purple;
+    color: $white;
+    font-weight: 500;
+    width: 100%;
+    max-width: 300px;
   }
 
   &__consent {
-    // styles for consent paragraph
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__input {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  &__input-error {
+    align-items: center;
+    color: #fa6363;
+    display: none;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 4px;
+    position: absolute;
+    bottom: -15px;
+    &-pic {
+      width: 12px;
+      height: 11px;
+    }
+  }
+
+  &__input-error-warning {
+    outline: 1px solid #fa6363;
+  }
+
+  &__input-error-text-warning {
+    display: flex;
   }
 
   &__consent-link {
-    // styles for consent link
+    transition: color 0.3s ease;
+    &:hover {
+      color: $purple;
+    }
   }
 
   &__image {
-    // styles for image
+    position: absolute; 
+    right: -85px;
+    top: 0;
   }
 }
