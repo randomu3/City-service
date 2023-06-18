@@ -54,11 +54,6 @@
     @extend %extend-button;
     font-weight: 500;
 
-    &--primary,
-    &--secondary {
-      cursor: pointer;
-    }
-
     &--primary {
       background-color: $purple;
 

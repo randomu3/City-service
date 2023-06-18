@@ -1,5 +1,118 @@
 .footer {
   background-color: $darkwhite;
   width: 100%;
-  max-width: 100%;
+
+  &__container {
+    margin: auto;
+    max-width: 1290px;
+    width: 100%;
+  }
+  &__main {
+    padding: 47px 0;
+    border-bottom: 1px solid #cbd0e3;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-wrapper {
+    // стили для обертки информации
+  }
+  &__info {
+    @include flexbox;
+    gap: 33px;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+  }
+  &__logo {
+    // стили для логотипа
+  }
+  &__address {
+    display: flex;
+    gap: 13px;
+  }
+  &__address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 150%;
+  }
+  &__location-icon {
+    width: 11px;
+    height: 16px;
+  }
+  &__label {
+    // стили для метки адреса
+  }
+  &__label-address {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+  &__nav-wrapper {
+    display: flex;
+    gap: 86px;
+  }
+  &__nav {
+    // стили для навигации
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__item {
+    // стили для элемента списка
+  }
+  &__link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 9px;
+  }
+  &__contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  &__contact-info {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+  }
+  &__contact-info-city {
+    font-weight: 500;
+  }
+  &__contacts-logo {
+    width: 16px;
+    height: 16px;
+    margin: 5px 0 0 0;
+  }
+  &__phone {
+    font-weight: 500;
+    text-decoration: none;
+  }
+  &__email {
+    text-decoration: none;
+  }
+  &__bottom {
+    display: flex;
+    gap: 203px;
+    padding: 27px 0 52px;
+  }
+  &__rights {
+    // стили для информации об авторских правах
+  }
+  &__privacy-policy {
+    text-decoration: none;
+  }
 }
