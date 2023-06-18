@@ -8,41 +8,28 @@
     width: 100%;
   }
   &__main {
+    @include flex(row, space-between, flex-end, 33px);
     padding: 47px 0;
     border-bottom: 1px solid #cbd0e3;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  &__info-wrapper {
-    // стили для обертки информации
   }
   &__info {
-    @include flexbox;
+    @include flex(column);
     gap: 33px;
-    flex-direction: column;
     max-width: 400px;
     width: 100%;
   }
-  &__logo {
-    // стили для логотипа
-  }
   &__address {
-    display: flex;
+    @include flex();
     gap: 13px;
   }
   &__address-info {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 5px;
     line-height: 150%;
   }
   &__location-icon {
     width: 11px;
     height: 16px;
-  }
-  &__label {
-    // стили для метки адреса
   }
   &__label-address {
     text-decoration: none;
@@ -53,19 +40,12 @@
     }
   }
   &__nav-wrapper {
-    display: flex;
+    @include flex();
     gap: 86px;
   }
-  &__nav {
-    // стили для навигации
-  }
   &__list {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 24px;
-  }
-  &__item {
-    // стили для элемента списка
   }
   &__link {
     text-decoration: none;
@@ -75,20 +55,17 @@
       color: $purple;
     }
   }
-
   &__contacts {
-    display: flex;
+    @include flex();
     gap: 9px;
   }
   &__contact-wrapper {
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     gap: 13px;
   }
   &__contact-info {
-    display: flex;
+    @include flex(column);
     gap: 4px;
-    flex-direction: column;
   }
   &__contact-info-city {
     font-weight: 500;
@@ -106,12 +83,9 @@
     text-decoration: none;
   }
   &__bottom {
-    display: flex;
+    @include flex();
     gap: 203px;
     padding: 27px 0 52px;
-  }
-  &__rights {
-    // стили для информации об авторских правах
   }
   &__privacy-policy {
     text-decoration: none;
