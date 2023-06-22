@@ -1,9 +1,133 @@
-header {
+.header {
+    max-width: 1290px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 31px;
 
-    // do not use .container such as it is use in commos.scss
-    menu {
-        display: flex;
-        list-style: none;
-        
+    &__logo {
+        width: 288px;
+        height: 63px;
     }
+
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__contact-geo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__contact-geo:first-child {
+        margin-right: 60px;
+    }
+
+    &__contact-phone {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__contact-svg {
+        width: 11px;
+        height: 15.8px;
+        margin-right: 6px;
+    }
+
+    &__contact-text-phone {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 8px;
+        line-height: 22px;
+    }
+
+    &__contact-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-right: 11px;
+    }
+
+    &__contact-link {
+        color: #6339f5;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        border-bottom: 1px dashed #6339F5;
+        text-decoration: none;
+    }
+
+    &__container {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 42px 0 26px 0;
+        align-items: flex-start;
+    }
+
+    &__nav_text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        /* Измените значение на flex-start */
+        position: relative;
+    }
+
+    &__nav_svg {
+        margin-left: 10px;
+        width: 12px;
+        height: 7px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        top: 100%;
+        left: 5%;
+        opacity: 0;
+        transition: all ease .5s;
+    }
+
+    .dropdown-content:hover {
+        display: block;
+        opacity: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    &__nav_text:hover .dropdown-content {
+        display: block;
+    }
+
 }
